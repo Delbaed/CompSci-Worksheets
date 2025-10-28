@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Weather Buoy Network</title>
+	<link rel="stylesheet" href="style.css" />
+	<link rel="script" href="script.js" />
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+	<!-- title banner to show users what webpage they are on -->
+	<div id="banner">
+		<a href="index.html" />
+		<img src="assets/icon.png">
+		<h1 title="to main page">WEATHER DATASET</h1>
+		</a>
+	</div>
+	<!-- sidebar with buttons to navigate site -->
+	<div id="sidebar" title="click on buttons to view data">
+		<h3 id="sidebarTitle">NAVIGATION</h3>
+		<ul id="sidebarList">
+			<li>
+				<a href="scatterTemp.html">
+				<button class="button">scatter plot</button>
+				</a>
+			</li>
+			<li>
+				<a href="windTime.html">
+				<button class="button">linear plot</button>
+				</a>
+			</li>
+			<li>
+				<a href="report.html">
+				<button class="button">weekly log</button>
+				</a>
+			</li>
+			<li>
+				<a href="survey.html">
+				<button class="button">quiz</button>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<!-- main body of page which changes to show data -->
+	<div id="main">
+		<div class="paragraph">
+			<h3>DATASET: Weather Buoy Network</h3>
+			<p>link: https://data.gov.ie/dataset/weather-buoy-network/resource/371a5e51-19fa-40ad-9592-8b41ca603eef</p>
+		</div>
+		<div class="paragraph">
+			<h4>week1: finding dataset</h4>
+			<p>First I chose the World Spider Database, but upon attempting to sift through data, I found it was a very small and restrictive set. Instead I opted for the Weather Bouy Network, which has more columns of variables which sparked better ideas for graphs.</p>
+		</div>
+		<div class="paragraph">
+			<h4>week2: cleaning dataset</h4>
+			<p>I used the Pandas library to clean my dataset. First I cut down my dataset for ease of plotting. I struggled to create a list of whtb I wanted to remove, before settling on a for loop to create a list of the rows I no longer needed. Then I removed unessecary columns with empty or unneeded data. I removed the columns "station_id, "longitude", "latitude", "DewPoint" and "QC_Flag".</p>
+		</div>
+		<div class="paragraph">
+			<h4>week3: scatter plot</h4>
+			<p>I initially tried to plot a scatter plot in week2, before cutting down my dataset, but the dataset was so big(over eight hundred thousand rows) that my laptop refused to display the plot. So after week2's work I made my scatter plot again, to find any correlation between "AirTemperature" and "SeaTemperature".</p>
+		</div>
+		<div class="paragraph">
+			<h4>week4: bar chart & linear plot</h4>
+			<p>I tried to create a bar chart, however I could not figure out how to plot it the way I wanted. So I opted to do a linear plot of wind-speeds against time instead. This had its own challenges as I wanted to create filters based on the station the data was collected from.</p>
+		</div>
+		<div class="paragraph">
+			<h4>week5: web interface</h4>
+			<p>I made my quiz using HTML for the questions and JavaScript to verify results.</p>
+		</div>
+		<div class="paragraph">
+			<h4>week6: untitled</h4>
+			<p></p>
+		</div>
+		<div class="paragraph">
+			<h4>week7: untitled</h4>
+			<p></p>
+		</div>
+		<div class="paragraph">
+			<h4>week8: untitled</h4>
+			<p></p>
+		</div>
+	</div>
+</body>
+</html>

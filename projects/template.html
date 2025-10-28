@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Weather Buoy Network</title>
+	<link rel="stylesheet" href="style.css" />
+	<link rel="script" href="script.js" />
+	<meta charset="utf-8" />
+</head>
+
+<body>
+	<!-- title banner to show users what webpage they are on -->
+	<div id="banner">
+		<a href="index.html">
+		<img src="assets/icon.png" />
+		<h1 title="to main page">WEATHER DATASET</h1>
+		</a>
+	</div>
+	<!-- sidebar with buttons to navigate site -->
+	<div id="sidebar" title="click on buttons to view data">
+		<h3 id="sidebarTitle">NAVIGATION</h3>
+		<ul id="sidebarList">
+			<li>
+				<a href="scatterTemp.html">
+				<button class="button">scatter plot</button>
+				</a>
+			</li>
+			<li>
+				<a href="windTime.html">
+				<button class="button">linear plot</button>
+				</a>
+			</li>
+			<li>
+				<a href="report.html">
+				<button class="button">weekly log</button>
+				</a>
+			</li>
+			<li>
+				<a href="survey.html">
+				<button class="button">quiz</button>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<!-- main body of page which changes to show data -->
+	<div id="main">
+		<div class="paragraph">
+			<h3>DATASET: Weather Buoy Network</h3>
+			<p>link: https://data.gov.ie/dataset/weather-buoy-network/resource/371a5e51-19fa-40ad-9592-8b41ca603eef</p>
+		</div>
+		{{ fig }}
+	</div>
+</body>
+</html>
